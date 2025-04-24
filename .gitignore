@@ -1,0 +1,10 @@
+# Pycharm and VS code
+.idea
+.vscode
+__pycache__
+
+# Cluster scripts
+*.slurm
+
+# Outputs
+runs

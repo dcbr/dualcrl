@@ -1,0 +1,8 @@
+name: dualcrl
+dependencies:
+  - gymnasium
+  - matplotlib
+  - numpy
+  - pandas
+  - scipy
+  - torch

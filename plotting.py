@@ -276,7 +276,7 @@ def plot_cliff(densities=None, cliff_density=None, cmap='viridis', norm=None, sh
     return _handle_figure(f, save_path=save_path, close=close)
 
 
-def plot_cliff_arrows(logits, max_only=True, densities=None, title='', save_path=None, close=True):
+def plot_cliff_arrows(logits, max_only=True, hide_terminal=True, densities=None, title='', save_path=None, close=True):
     dl = 0.4  # Arrow length
     arrow_props = {"length_includes_head": True, "head_width": 0.1, "color": "#e55b30"}  # Blue variant: #1763ab
     dirs = [(0, -dl), (dl, 0), (0, dl), (-dl, 0)]  # Y direction flipped as Y axis is flipped
@@ -289,6 +289,8 @@ def plot_cliff_arrows(logits, max_only=True, densities=None, title='', save_path
     # Plot arrows
     for y in range(4):
         for x in range(12):
+            if hide_terminal and y == 3 and x > 0:
+                continue
             if max_only:
                 a = np.argmax(logits[12*y + x, :])
                 ax.arrow(x, y, *dirs[a], **arrow_props)

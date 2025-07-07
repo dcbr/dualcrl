@@ -52,4 +52,4 @@ Check ``python main.py --help`` for a full overview of supported parameters.
 | `--uid`   | Any value               | Unique identifier for a job run.                                              |
 
 ## References
-[1] De Cooman, B., Suykens, J.: A Dual Perspective of Reinforcement Learning for Imposing Policy Constraints. Accepted for publication in *IEEE Transactions on Artificial Intelligence*.
+[1] De Cooman, B., Suykens, J.: A Dual Perspective of Reinforcement Learning for Imposing Policy Constraints. Accepted for publication in *IEEE Transactions on Artificial Intelligence*. DOI: [10.1109/TAI.2025.3564898](https://doi.org/10.1109/TAI.2025.3564898), ArXiv: [2404.16468](https://arxiv.org/abs/2404.16468)
